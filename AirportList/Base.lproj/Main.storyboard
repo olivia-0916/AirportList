@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1c4-Au-UMN">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AirportList" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="DsO-mh-BuM">
+                                <rect key="frame" x="0.0" y="88" width="375" height="690"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="AirportCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="AirportCell" rowHeight="100" id="ffU-ks-6Ji" customClass="AirportCell" customModule="AirportList" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ffU-ks-6Ji" id="JbO-1Z-iHb">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Yxi-Sh-MEj">
+                                                    <rect key="frame" x="20" y="11" width="78" height="78"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="Yxi-Sh-MEj" secondAttribute="height" multiplier="1:1" id="LQx-7f-kwq"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="country" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="idh-nR-II9">
+                                                    <rect key="frame" x="113" y="65" width="232" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="fxB-Pj-7Ib"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" systemColor="tertiaryLabelColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="airport name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RnV-7v-aJC">
+                                                    <rect key="frame" x="113" y="16" width="232" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="gtN-H6-gUi"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                    <color key="textColor" systemColor="tertiaryLabelColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="idh-nR-II9" firstAttribute="bottom" secondItem="Yxi-Sh-MEj" secondAttribute="bottom" constant="-3" id="3aS-30-h27"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="Yxi-Sh-MEj" secondAttribute="bottom" id="3lm-nN-zHi"/>
+                                                <constraint firstItem="idh-nR-II9" firstAttribute="leading" secondItem="Yxi-Sh-MEj" secondAttribute="trailing" constant="15" id="CAB-I0-EVX"/>
+                                                <constraint firstItem="Yxi-Sh-MEj" firstAttribute="centerY" secondItem="JbO-1Z-iHb" secondAttribute="centerY" id="GHf-Oi-guh"/>
+                                                <constraint firstItem="RnV-7v-aJC" firstAttribute="top" secondItem="Yxi-Sh-MEj" secondAttribute="top" constant="5" id="I0b-ue-RER"/>
+                                                <constraint firstItem="Yxi-Sh-MEj" firstAttribute="top" secondItem="JbO-1Z-iHb" secondAttribute="topMargin" id="QmP-Cq-dNG"/>
+                                                <constraint firstItem="Yxi-Sh-MEj" firstAttribute="leading" secondItem="JbO-1Z-iHb" secondAttribute="leading" constant="20" id="bA3-HB-rdb"/>
+                                                <constraint firstAttribute="trailing" secondItem="idh-nR-II9" secondAttribute="trailing" constant="30" id="hlN-YE-mIL"/>
+                                                <constraint firstItem="Yxi-Sh-MEj" firstAttribute="height" secondItem="JbO-1Z-iHb" secondAttribute="height" multiplier="0.78" id="hp1-Aw-VAg"/>
+                                                <constraint firstItem="RnV-7v-aJC" firstAttribute="leading" secondItem="Yxi-Sh-MEj" secondAttribute="trailing" constant="15" id="rsk-6n-Guk"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="Yxi-Sh-MEj" secondAttribute="bottom" id="s6t-Bu-3jo"/>
+                                                <constraint firstAttribute="trailing" secondItem="RnV-7v-aJC" secondAttribute="trailing" constant="30" id="xMB-HF-1Rj"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="airportimageview" destination="Yxi-Sh-MEj" id="Cy7-uJ-oSU"/>
+                                            <outlet property="countrylabel" destination="idh-nR-II9" id="Gcf-tj-MR4"/>
+                                            <outlet property="namelabel" destination="RnV-7v-aJC" id="hgr-0w-yhh"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="DsO-mh-BuM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="96s-RA-0Qp"/>
+                            <constraint firstItem="DsO-mh-BuM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="9tq-bt-J9K"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="DsO-mh-BuM" secondAttribute="bottom" id="c5J-td-v9d"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DsO-mh-BuM" secondAttribute="trailing" id="lzv-hX-HUs"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="IZ2-FN-HlM"/>
+                    <connections>
+                        <outlet property="tableView" destination="DsO-mh-BuM" id="mLG-4j-AAg"/>
+                        <segue destination="vgy-uc-bEo" kind="show" identifier="gotodetailpage" id="IV0-hH-Skt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="80" y="10"/>
+        </scene>
+        <!--Detail Page-->
+        <scene sceneID="sRv-Dg-8tL">
+            <objects>
+                <viewController id="vgy-uc-bEo" customClass="DetailPage" customModule="AirportList" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1QZ-47-hrg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="2mC-WV-hbk">
+                                <rect key="frame" x="0.0" y="88" width="375" height="375"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zgD-cD-7pS">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="375"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="375" id="4yy-vU-rzd"/>
+                                            <constraint firstAttribute="width" constant="375" id="Y3E-zW-P34"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="namelabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="32t-83-2rt">
+                                <rect key="frame" x="0.0" y="494" width="212" height="124"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="Rj7-Je-Poo"/>
+                                    <constraint firstAttribute="height" constant="100" id="SWS-VQ-mow"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="countrylabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pfj-jm-hAU">
+                                <rect key="frame" x="0.0" y="638" width="212" height="124"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="Z9d-Si-ySf"/>
+                                    <constraint firstAttribute="width" constant="375" id="rWM-U0-wJC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="saE-xa-zse"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="YgP-jl-feo"/>
+                    <connections>
+                        <outlet property="countrylabel" destination="pfj-jm-hAU" id="y4j-Zj-BW9"/>
+                        <outlet property="namelabel" destination="32t-83-2rt" id="u0S-FP-0rb"/>
+                        <outlet property="photoimage" destination="zgD-cD-7pS" id="H9J-kb-Sim"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8xC-tS-SYB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="823.20000000000005" y="8.1280788177339911"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="DGn-Ck-uKA">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GVb-XU-fsj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <navigationController id="1c4-Au-UMN" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Xq8-Bl-cPe">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="tPs-Mf-mxZ"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="-664" y="9"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="tertiaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
