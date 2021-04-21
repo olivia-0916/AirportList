@@ -40,13 +40,17 @@ class ViewController: UIViewController{
         cell.countrylabel.text = airport.Country
         return cell
     }
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        if let row = tableView.indexPathForSelectedRow?.row
-//        {
-//            let DetailPage = segue.destination as? DetailPage
-//            DetailPage?.name
-//        }
-//    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        switch segue.identifier{
+        case "gotodetailpage":
+            let name = sender as? String
+            if let nextpage = segue.destination as? DetailPage{
+//                nextpage.name = name
+            }
+        default: break
+        }
+    }
 }
 
 extension ViewController {
