@@ -13,17 +13,18 @@ class DetailPage: UIViewController {
     @IBOutlet weak var namelabel: UILabel!
     @IBOutlet weak var countrylabel: UILabel!
     
-    var name:Airport?
+    var airport: Airport?
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        photoimage.image = UIImage(named: (name?.Image)!)
-        countrylabel.text = name?.Country
+        photoimage.image = UIImage(named: (airport?.Image)!)
+        countrylabel.text = airport?.Country
+        namelabel.text = airport?.Airport
         
     }
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
     }
 
 

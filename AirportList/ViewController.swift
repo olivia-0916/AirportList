@@ -7,19 +7,15 @@
 
 import UIKit
 
-class ViewController: UIViewController{
+class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
     var airports = [Airport]()
-    
     @IBOutlet weak var tableView: UITableView!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         fetchData()
-    }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
+        tableView.delegate = self
+        tableView.dataSource = self
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -32,28 +28,46 @@ class ViewController: UIViewController{
         return airports.count
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = self.tableView.dequeueReusableCell(withIdentifier: "AirportCell", for: indexPath) as! AirportCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "AirportCell", for: indexPath) as? AirportCell
         
         let airport = airports[indexPath.row]
-        cell.airportimageview.image = UIImage(named: airport.Image)
-        cell.namelabel.text = airport.Airport
-        cell.countrylabel.text = airport.Country
-        return cell
+        cell?.airportimageview.image = UIImage(named: airport.Image)
+        cell?.namelabel.text = airport.Airport
+        cell?.countrylabel.text = airport.Country
+        return cell!
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        switch segue.identifier{
-        case "gotodetailpage":
-            let name = sender as? String
-            if let nextpage = segue.destination as? DetailPage{
-//                nextpage.name = name
-            }
-        default: break
-        }
+   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+         let airport = airports[indexPath.row]
+    
+        performSegue(withIdentifier: "gotodetailpage", sender: airport)
     }
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        //print(sender as? String)
+        switch segue.identifier {
+        case "gotodetailpage":
+            let airport = sender as? Airport
+            if let DetailPage = segue.destination as? DetailPage{
+                DetailPage.airport = airport
+            }
+        default:
+            break
+        }
+//        let controller = segue.destination as? DetailPage
+//        if let row = tableView.indexPathForSelectedRow?.row{
+//            let controller = segue.destination as? DetailPage
+//            controller?.namelabel = airports
+//            controller?.countrylabel = airports
+//            }
+    }
+    
+
 }
 
-extension ViewController {
+    extension ViewController {
     private func fetchData() {
         guard let path = Bundle.main.path(forResource: "airports", ofType: "plist"),
               let xml = FileManager.default.contents(atPath: path),
@@ -64,13 +78,5 @@ extension ViewController {
         tableView.reloadData()
     }
     
-    struct Airport: Decodable {
-        var Airport: String
-        var Country: String
-        var IATA: String
-        var Image: String
-        var ServedCity: String
-        var ShortName: String
-    }
 }
 

@@ -87,8 +87,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="IZ2-FN-HlM"/>
                     <connections>
-                        <outlet property="tableView" destination="DsO-mh-BuM" id="mLG-4j-AAg"/>
-                        <segue destination="vgy-uc-bEo" kind="show" identifier="gotodetailpage" id="IV0-hH-Skt"/>
+                        <outlet property="tableView" destination="DsO-mh-BuM" id="hdY-Qm-pW4"/>
+                        <segue destination="vgy-uc-bEo" kind="show" identifier="gotodetailpage" destinationCreationSelector="gotonextpage:" id="IV0-hH-Skt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -116,7 +116,7 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="namelabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="32t-83-2rt">
-                                <rect key="frame" x="0.0" y="494" width="212" height="124"/>
+                                <rect key="frame" x="0.0" y="494" width="375" height="124"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="375" id="Rj7-Je-Poo"/>
                                     <constraint firstAttribute="height" constant="100" id="SWS-VQ-mow"/>
@@ -126,7 +126,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="countrylabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pfj-jm-hAU">
-                                <rect key="frame" x="0.0" y="638" width="212" height="124"/>
+                                <rect key="frame" x="0.0" y="638" width="375" height="124"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="Z9d-Si-ySf"/>
                                     <constraint firstAttribute="width" constant="375" id="rWM-U0-wJC"/>
@@ -138,6 +138,14 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="saE-xa-zse"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="pfj-jm-hAU" firstAttribute="top" secondItem="32t-83-2rt" secondAttribute="bottom" constant="30" id="723-v9-N3B"/>
+                            <constraint firstItem="32t-83-2rt" firstAttribute="top" secondItem="zgD-cD-7pS" secondAttribute="bottom" constant="30" id="Lvi-y6-ieZ"/>
+                            <constraint firstItem="saE-xa-zse" firstAttribute="trailing" secondItem="pfj-jm-hAU" secondAttribute="trailing" id="TV1-CS-Iph"/>
+                            <constraint firstItem="saE-xa-zse" firstAttribute="leading" secondItem="pfj-jm-hAU" secondAttribute="leading" id="UFU-oJ-HnO"/>
+                            <constraint firstItem="saE-xa-zse" firstAttribute="trailing" secondItem="32t-83-2rt" secondAttribute="trailing" id="ila-4g-LKs"/>
+                            <constraint firstItem="saE-xa-zse" firstAttribute="leading" secondItem="32t-83-2rt" secondAttribute="leading" id="y73-Ua-Imn"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="YgP-jl-feo"/>
                     <connections>
@@ -153,7 +161,6 @@
         <!--Navigation Controller-->
         <scene sceneID="DGn-Ck-uKA">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="GVb-XU-fsj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController id="1c4-Au-UMN" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Xq8-Bl-cPe">
                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
@@ -163,6 +170,7 @@
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="tPs-Mf-mxZ"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GVb-XU-fsj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-664" y="9"/>
         </scene>
