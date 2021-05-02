@@ -34,30 +34,30 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="country" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="idh-nR-II9">
-                                                    <rect key="frame" x="113" y="65" width="232" height="21"/>
+                                                    <rect key="frame" x="113" y="58" width="232" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="fxB-Pj-7Ib"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" systemColor="tertiaryLabelColor"/>
+                                                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="airport name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RnV-7v-aJC">
-                                                    <rect key="frame" x="113" y="16" width="232" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="airport name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RnV-7v-aJC">
+                                                    <rect key="frame" x="113" y="29" width="232" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="gtN-H6-gUi"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                    <color key="textColor" systemColor="tertiaryLabelColor"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="22"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="idh-nR-II9" firstAttribute="bottom" secondItem="Yxi-Sh-MEj" secondAttribute="bottom" constant="-3" id="3aS-30-h27"/>
+                                                <constraint firstItem="idh-nR-II9" firstAttribute="bottom" secondItem="Yxi-Sh-MEj" secondAttribute="bottom" constant="-10" id="3aS-30-h27"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="Yxi-Sh-MEj" secondAttribute="bottom" id="3lm-nN-zHi"/>
                                                 <constraint firstItem="idh-nR-II9" firstAttribute="leading" secondItem="Yxi-Sh-MEj" secondAttribute="trailing" constant="15" id="CAB-I0-EVX"/>
                                                 <constraint firstItem="Yxi-Sh-MEj" firstAttribute="centerY" secondItem="JbO-1Z-iHb" secondAttribute="centerY" id="GHf-Oi-guh"/>
-                                                <constraint firstItem="RnV-7v-aJC" firstAttribute="top" secondItem="Yxi-Sh-MEj" secondAttribute="top" constant="5" id="I0b-ue-RER"/>
+                                                <constraint firstItem="RnV-7v-aJC" firstAttribute="top" secondItem="Yxi-Sh-MEj" secondAttribute="top" constant="15" id="I0b-ue-RER"/>
                                                 <constraint firstItem="Yxi-Sh-MEj" firstAttribute="top" secondItem="JbO-1Z-iHb" secondAttribute="topMargin" id="QmP-Cq-dNG"/>
                                                 <constraint firstItem="Yxi-Sh-MEj" firstAttribute="leading" secondItem="JbO-1Z-iHb" secondAttribute="leading" constant="20" id="bA3-HB-rdb"/>
                                                 <constraint firstAttribute="trailing" secondItem="idh-nR-II9" secondAttribute="trailing" constant="30" id="hlN-YE-mIL"/>
@@ -119,30 +119,32 @@
                                 <rect key="frame" x="0.0" y="494" width="375" height="124"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="375" id="Rj7-Je-Poo"/>
-                                    <constraint firstAttribute="height" constant="100" id="SWS-VQ-mow"/>
+                                    <constraint firstAttribute="height" constant="30" id="SWS-VQ-mow"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="22"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="countrylabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pfj-jm-hAU">
                                 <rect key="frame" x="0.0" y="638" width="375" height="124"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="Z9d-Si-ySf"/>
+                                    <constraint firstAttribute="height" constant="20" id="Z9d-Si-ySf"/>
                                     <constraint firstAttribute="width" constant="375" id="rWM-U0-wJC"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="saE-xa-zse"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="pfj-jm-hAU" firstAttribute="top" secondItem="32t-83-2rt" secondAttribute="bottom" constant="30" id="723-v9-N3B"/>
-                            <constraint firstItem="32t-83-2rt" firstAttribute="top" secondItem="zgD-cD-7pS" secondAttribute="bottom" constant="30" id="Lvi-y6-ieZ"/>
+                            <constraint firstItem="pfj-jm-hAU" firstAttribute="top" secondItem="32t-83-2rt" secondAttribute="bottom" constant="10" id="723-v9-N3B"/>
+                            <constraint firstItem="zgD-cD-7pS" firstAttribute="leading" secondItem="saE-xa-zse" secondAttribute="leading" id="9ou-FT-RKJ"/>
+                            <constraint firstItem="32t-83-2rt" firstAttribute="top" secondItem="zgD-cD-7pS" secondAttribute="bottom" constant="20" id="Lvi-y6-ieZ"/>
                             <constraint firstItem="saE-xa-zse" firstAttribute="trailing" secondItem="pfj-jm-hAU" secondAttribute="trailing" id="TV1-CS-Iph"/>
                             <constraint firstItem="saE-xa-zse" firstAttribute="leading" secondItem="pfj-jm-hAU" secondAttribute="leading" id="UFU-oJ-HnO"/>
+                            <constraint firstItem="saE-xa-zse" firstAttribute="trailing" secondItem="zgD-cD-7pS" secondAttribute="trailing" id="XiW-gT-EQb"/>
                             <constraint firstItem="saE-xa-zse" firstAttribute="trailing" secondItem="32t-83-2rt" secondAttribute="trailing" id="ila-4g-LKs"/>
                             <constraint firstItem="saE-xa-zse" firstAttribute="leading" secondItem="32t-83-2rt" secondAttribute="leading" id="y73-Ua-Imn"/>
                         </constraints>
@@ -178,9 +180,6 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="tertiaryLabelColor">
-            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
