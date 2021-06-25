@@ -13,6 +13,8 @@ class DetailPage: UIViewController {
     @IBOutlet weak var namelabel: UILabel!
     @IBOutlet weak var countrylabel: UILabel!
     
+    @IBOutlet weak var ITATlabel: UILabel!
+    
     var airport: Airport?
     
     
@@ -21,6 +23,7 @@ class DetailPage: UIViewController {
         photoimage.image = UIImage(named: (airport?.Image)!)
         countrylabel.text = airport?.Country
         namelabel.text = airport?.Airport
+        ITATlabel.text = airport?.IATA
         
     }
     override func didReceiveMemoryWarning() {
