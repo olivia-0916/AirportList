@@ -12,12 +12,12 @@ class DetailPage: UIViewController {
     @IBOutlet weak var photoimage: UIImageView!
     @IBOutlet weak var namelabel: UILabel!
     @IBOutlet weak var countrylabel: UILabel!
-    
     @IBOutlet weak var ITATlabel: UILabel!
-    
     @IBOutlet weak var shortname: UILabel!
-    var airport: Airport?
     @IBOutlet weak var servedcity: UILabel!
+    
+    var airport: Airport?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         photoimage.image = UIImage(named: (airport?.Image)!)
@@ -27,9 +27,11 @@ class DetailPage: UIViewController {
         shortname.text = airport?.ShortName
         servedcity.text = airport?.ServedCity
     }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
+    
 
 
 
