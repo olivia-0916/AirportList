@@ -8,6 +8,7 @@
 import UIKit
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
+    
     var airports = [Airport]()
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
@@ -21,12 +22,15 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 100
     }
+    
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return airports.count
     }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "AirportCell", for: indexPath) as? AirportCell
         
@@ -63,8 +67,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 //            controller?.countrylabel = airports
 //            }
     }
-    
-
 }
 
     extension ViewController {
@@ -77,6 +79,5 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         self.airports = airports
         tableView.reloadData()
     }
-    
 }
 
