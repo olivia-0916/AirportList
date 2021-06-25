@@ -141,7 +141,21 @@
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="ITAT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bcE-gM-60h">
                                 <rect key="frame" x="0.0" y="606" width="375" height="30"/>
-                                <color key="backgroundColor" red="0.90980392160000001" green="0.90588235289999997" blue="0.90588235289999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.61605149510000001" green="0.68256676199999999" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="shortname" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pcI-tr-BKv">
+                                <rect key="frame" x="0.0" y="659" width="375" height="30"/>
+                                <color key="backgroundColor" red="0.56864346190000004" green="0.55710946409999995" blue="0.47720771470000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="servedcity" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7a1-3I-XBC">
+                                <rect key="frame" x="0.0" y="710" width="375" height="30"/>
+                                <color key="backgroundColor" red="0.92086648940000004" green="0.76130944489999997" blue="0.28216916320000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -150,16 +164,22 @@
                         <viewLayoutGuide key="safeArea" id="saE-xa-zse"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="saE-xa-zse" firstAttribute="trailing" secondItem="7a1-3I-XBC" secondAttribute="trailing" id="5Zu-8E-qyz"/>
                             <constraint firstItem="pfj-jm-hAU" firstAttribute="top" secondItem="32t-83-2rt" secondAttribute="bottom" constant="10" id="723-v9-N3B"/>
+                            <constraint firstItem="pcI-tr-BKv" firstAttribute="top" secondItem="bcE-gM-60h" secondAttribute="bottom" constant="10" id="8ab-cz-w2n"/>
                             <constraint firstItem="zgD-cD-7pS" firstAttribute="leading" secondItem="saE-xa-zse" secondAttribute="leading" id="9ou-FT-RKJ"/>
+                            <constraint firstItem="7a1-3I-XBC" firstAttribute="leading" secondItem="saE-xa-zse" secondAttribute="leading" id="CKT-g5-AhE"/>
                             <constraint firstItem="bcE-gM-60h" firstAttribute="top" secondItem="pfj-jm-hAU" secondAttribute="bottom" constant="10" id="Ig1-is-fqs"/>
                             <constraint firstItem="32t-83-2rt" firstAttribute="top" secondItem="zgD-cD-7pS" secondAttribute="bottom" constant="20" id="Lvi-y6-ieZ"/>
+                            <constraint firstItem="7a1-3I-XBC" firstAttribute="top" secondItem="pcI-tr-BKv" secondAttribute="bottom" constant="10" id="Rph-iu-iHJ"/>
                             <constraint firstItem="saE-xa-zse" firstAttribute="trailing" secondItem="pfj-jm-hAU" secondAttribute="trailing" id="TV1-CS-Iph"/>
                             <constraint firstItem="saE-xa-zse" firstAttribute="leading" secondItem="pfj-jm-hAU" secondAttribute="leading" id="UFU-oJ-HnO"/>
                             <constraint firstItem="saE-xa-zse" firstAttribute="trailing" secondItem="zgD-cD-7pS" secondAttribute="trailing" id="XiW-gT-EQb"/>
                             <constraint firstItem="bcE-gM-60h" firstAttribute="leading" secondItem="saE-xa-zse" secondAttribute="leading" id="hpQ-Jk-3jb"/>
                             <constraint firstItem="saE-xa-zse" firstAttribute="trailing" secondItem="32t-83-2rt" secondAttribute="trailing" id="ila-4g-LKs"/>
+                            <constraint firstItem="pcI-tr-BKv" firstAttribute="leading" secondItem="saE-xa-zse" secondAttribute="leading" id="kdT-Nt-rPs"/>
                             <constraint firstItem="saE-xa-zse" firstAttribute="trailing" secondItem="bcE-gM-60h" secondAttribute="trailing" id="o6e-xC-lKA"/>
+                            <constraint firstItem="pcI-tr-BKv" firstAttribute="trailing" secondItem="saE-xa-zse" secondAttribute="trailing" id="xtU-RC-bP9"/>
                             <constraint firstItem="saE-xa-zse" firstAttribute="leading" secondItem="32t-83-2rt" secondAttribute="leading" id="y73-Ua-Imn"/>
                         </constraints>
                     </view>
@@ -169,6 +189,8 @@
                         <outlet property="countrylabel" destination="pfj-jm-hAU" id="y4j-Zj-BW9"/>
                         <outlet property="namelabel" destination="32t-83-2rt" id="u0S-FP-0rb"/>
                         <outlet property="photoimage" destination="zgD-cD-7pS" id="H9J-kb-Sim"/>
+                        <outlet property="servedcity" destination="7a1-3I-XBC" id="y4M-S2-Clb"/>
+                        <outlet property="shortname" destination="pcI-tr-BKv" id="MkE-ov-n0a"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8xC-tS-SYB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
