@@ -117,7 +117,7 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="namelabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="32t-83-2rt">
-                                <rect key="frame" x="0.0" y="494" width="375" height="124"/>
+                                <rect key="frame" x="0.0" y="494" width="375" height="50"/>
                                 <color key="backgroundColor" red="0.85518517449999998" green="0.84357879430000005" blue="0.7038133164" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="tintColor" red="0.90980392160000001" green="0.90588235289999997" blue="0.90588235289999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -129,7 +129,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="countrylabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pfj-jm-hAU">
-                                <rect key="frame" x="0.0" y="638" width="375" height="124"/>
+                                <rect key="frame" x="0.0" y="552" width="375" height="50"/>
                                 <color key="backgroundColor" red="0.94671379229999997" green="0.91985269810000003" blue="0.78857170529999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="Z9d-Si-ySf"/>
