@@ -71,10 +71,12 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
     extension ViewController {
     private func fetchData() {
+        
         guard let path = Bundle.main.path(forResource: "airports", ofType: "plist"),
               let xml = FileManager.default.contents(atPath: path),
               let airports = try? PropertyListDecoder().decode([Airport].self, from: xml) else {
             return
+            
         }
         self.airports = airports
         tableView.reloadData()
